@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    table tr {
+      border: 1px dashed #ccc;
+    }
+
+    table tr td {
+      border: 1px dashed #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+    <table style="width: 800px;height: 300px;border: 1px dashed #ccc;">
+      <tr>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>3</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>3</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>6</td>
+        <td>Data</td>
+
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>3</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>3</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>3</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>3</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>8</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>8</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>4</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>8</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>4</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>8</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+    </table>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="tablemerge.js"></script>
+    <script type="text/javascript">
+      $('table').mergeCell({    //封装好的mergeCell方法直接引用即可
+        // 目前只有cols这么一个配置项, 用数组表示列的索引,从0开始 
+        // 然后根据指定列来处理(合并)相同内容单元格
+        cols: [2, 7] //根据索引指定需要进行合并的td列
+      });
+    </script>
+  </body>
+</body>
+
+</html>
